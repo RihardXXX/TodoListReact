@@ -1,0 +1,17 @@
+.info-header {
+    display: block;
+    text-align: center;
+    border: 1px solid #939393;
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.badge {
+    font-size: 14px;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

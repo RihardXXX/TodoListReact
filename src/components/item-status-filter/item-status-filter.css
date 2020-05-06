@@ -1,11 +1,9 @@
 .btn-group {
-    display: inline-block;
     text-align: center;
-    margin-left: 239px;
+    margin-left: 10px;
 }
 
 .btn-group button {
     height: 40px;
-
 }
 

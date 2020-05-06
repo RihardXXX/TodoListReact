@@ -3,3 +3,16 @@
     height: 30px;
     margin-left: 5px;
 }
+
+.todo-list-item {
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.important {
+    font-weight: bold;
+    color: steelblue;
+}

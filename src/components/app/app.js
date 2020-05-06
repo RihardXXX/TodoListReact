@@ -6,7 +6,7 @@ import SearchPanel from "../search-panel/";
 import ItemStatusFilter from "../item-status-filter/";
 import TodoList from "../todo-list/";
 
-
+import './app.css';
 
 const App = () => {
 
@@ -20,9 +20,11 @@ const App = () => {
         <div>
             <AppHeader />
             <InfoHeader />
-            <SearchPanel />
-            <ItemStatusFilter />
-            <TodoList todos={ todoData }/>
+            <div className="panel">
+                <SearchPanel />
+                <ItemStatusFilter />
+            </div>
+            <TodoList todos={ todoData } onDeleted={(id)=> console.log('del', id)} />
         </div>
     );
 };

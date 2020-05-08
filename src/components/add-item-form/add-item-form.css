@@ -1,0 +1,14 @@
+.add-item-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.add-item-form input {
+    display: inline-block;
+}
+
+.add-item-form button {
+    display: inline-block;
+    margin-left: 10px;
+}

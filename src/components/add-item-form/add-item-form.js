@@ -16,12 +16,16 @@ export default class AddItemForm extends Component{
     onSubmit = (e) => {
         e.preventDefault();
         this.props.addItem(this.state.label);
+        this.setState({
+            label: '',
+        })
     };
 
     render() {
         return (
             <form className="add-item-form" onSubmit={ this.onSubmit }>
-                <input type="text"  className="form-control" placeholder="add item" onChange={ this.onLabelChange }/>
+                <input type="text"  className="form-control" placeholder="add item" onChange={ this.onLabelChange }
+                    value={ this.state.label }/>
                 <button className="btn btn-outline-secondary">add item</button>
             </form>
         );
